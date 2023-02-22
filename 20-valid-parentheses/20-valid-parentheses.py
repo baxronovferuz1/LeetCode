@@ -1,27 +1,27 @@
 class Solution:
     def isValid(self, s: str) -> bool:
         stack=[]
-        boo = True
-        for ch in s:
-            if ch in '([{':
-                stack.append(ch)
-            elif ch in ')]}':
+        types = True
+        for i in s:
+            if i in '([{':
+                stack.append(i)
+            elif i in ')]}':
                 try:
                     popped_element = stack.pop()
                 except:
-                    boo=False
+                    types=False
                     break
-                if popped_element=='(' and ch==')':
+                if popped_element=='(' and i==')':
                     pass
-                elif popped_element=='{' and ch=='}':
+                elif popped_element=='{' and i=='}':
                     pass
-                elif popped_element=='[' and ch==']':
+                elif popped_element=='[' and i==']':
                     pass
                 else:
-                    boo=False
+                    types=False
                     break
         if len(stack)==0:
-            return (boo)
+            return (types)
         else:
             return (False)
                 
