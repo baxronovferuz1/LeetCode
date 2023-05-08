@@ -3,7 +3,6 @@ class Solution:
         s=0
         for i in range(len(mat)):
             for j in range(len(mat)):
-                # i=j for Principal diagonal & i+j=matrix.length -1 for Secondary diagonal
                 if i==j or i+j==len(mat)-1:
                     s+=mat[i][j]
         return s
