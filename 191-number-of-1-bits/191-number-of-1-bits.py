@@ -6,3 +6,5 @@ class Solution:
             n=n>>1
         return count
         
+        
+# return bin(n)[2:].count('1')
