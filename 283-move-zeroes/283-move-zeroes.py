@@ -11,12 +11,7 @@ class Solution:
                 nums[i], nums[n] = nums[n], nums[i]
                 n += 1
         
-        
-        
-        
-        
-         
-        
+    
         
         # n=0
         # for i in nums:
