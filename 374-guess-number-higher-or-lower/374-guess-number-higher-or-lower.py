@@ -16,6 +16,6 @@ class Solution:
                 e = mid - 1
             else:
                 s = mid + 1
-        return 1
+        return -1
 
         
