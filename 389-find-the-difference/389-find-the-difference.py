@@ -3,10 +3,7 @@ class Solution:
         for i in t:
             if s.count(i)!=t.count(i):
                 return i
-        
-        
-        
-        
+    
         
         
     	# s, t = sorted(s), sorted(t)
