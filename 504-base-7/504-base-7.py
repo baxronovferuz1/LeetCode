@@ -6,9 +6,9 @@ class Solution:
         if num<0:
             num=-num
             a = '-'
-        base7 = ''
+        num7 = ''
         while num>0:
-            base7+=str(num%7)
+            num7+=str(num%7)
             num = num//7
-        return a+base7[::-1]
+        return a+num7[::-1]
         
