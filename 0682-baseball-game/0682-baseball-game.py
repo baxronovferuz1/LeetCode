@@ -6,7 +6,6 @@ class Solution:
                 lists.append(2*lists[-1])
             elif i=="C":
                 lists.pop()
-            
             elif i=="+":
                 lists.append(lists[-1]+lists[-2])
             else:
