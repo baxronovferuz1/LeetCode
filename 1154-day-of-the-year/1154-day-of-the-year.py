@@ -1,6 +1,6 @@
 class Solution:
     def dayOfYear(self, date: str) -> int:
-        years=[0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334]
+        months_conbination=[0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334]
 
         day=int(date[-2:])
         year=int(date[:4])
@@ -11,4 +11,4 @@ class Solution:
             day+=1
 
         #return days of specific month + date
-        return years[month-1]+day
+        return months_conbination[month-1]+day
