@@ -1,3 +1,3 @@
 class Solution:
     def frequencySort(self, nums: List[int]) -> List[int]:
-        return sorted(sorted(nums,reverse=1),key=nums.count)
+        return sorted(sorted(nums,reverse=True),key=nums.count)
