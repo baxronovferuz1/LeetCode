@@ -1,13 +1,9 @@
 class Solution:
     def sumOfUnique(self, nums: List[int]) -> int:
-        sum = 0
+        result = 0
         for i in range(len(nums)):
             if(nums.count(nums[i])==1):
-                sum=sum+nums[i]
-        return sum
+                result=result+nums[i]
+        return result
   
-        # sum = 0
-        # for i in range(len(nums)):
-        #         if(nums.count(nums[i]) == 1):
-        #                 sum = sum + nums[i]
-        # return sum
+       
